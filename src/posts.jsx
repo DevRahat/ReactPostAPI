@@ -1,11 +1,12 @@
 import './post.css'
 export default function Posts({post}){
+    const {title, body, id, userId}=post;
     return(
         <div className='post'>
-            <h5>Post: </h5>
-            <p><small>userId: </small></p>
-            <p><small>postId: </small></p>
-            <p></p>
+            <h5>Title: {title}</h5>
+            <p><small>userId: {userId}</small></p>
+            <p><small>postId: {id}</small></p>
+            <p>{body}</p>
         </div>
     )
 }

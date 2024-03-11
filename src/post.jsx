@@ -14,7 +14,7 @@ export default function Post(){
         <div className="">
             <h3>Post: {post.length}</h3>
             {
-                post.map(post =><Posts></Posts>)
+                post.map(post =><Posts post={post}></Posts>)
             }
         </div>
     )
